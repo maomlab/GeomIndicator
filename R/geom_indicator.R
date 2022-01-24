@@ -1,6 +1,3 @@
-#' ggplot2 geom that adds a label to facet panes
-#'
-#' @export
 GeomIndicator <- ggplot2::ggproto(
   "GeomIndicator", ggplot2::Geom,
   required_aes = c("indicator"),
@@ -119,6 +116,9 @@ GeomIndicator <- ggplot2::ggproto(
         lineheight=data$lineheight[1]),
       check.overlap = check_overlap)})
 
+
+#' ggplot2 geom that adds a label to facet panes
+#'
 #' @export
 geom_indicator <- function (
   mapping = NULL,
